@@ -8,15 +8,15 @@ To correct follow my wife's watering routine for the existing plants, the script
 
 This project is composed of 2 parts:
 - Deamon to monitor soil moisture and visual of the plants and water on a specific schedule.
-- Web app capable of live feed and water the plants on demmand.
+- Web app capable of camera live feed and watering the plants on demmand.
 
 ### Daemon
-It will check every 10 min the soil moisture and take a pricture of the plant
+It checks every 10 min the soil moisture and take a pricture of the plant
 
 ### Web app
 This is a web page hosted on the Rapbery Pi Zero ex. http://[host_name]/
 - Allows you to stream a live video from the Pi Camera 
-- Allow you to trigger the GPIO to start/stop watering
+- Allows you to trigger the GPIO to start/stop watering
 
 
 ## Components
@@ -34,6 +34,6 @@ This is a web page hosted on the Rapbery Pi Zero ex. http://[host_name]/
 ```
 
 ## Security information
-As the web app contains live feed from the camera it is advised to deploy in a secure network environment or without internet access.
-If you prefer during the instalation dont install the web app.
-We don't take any responsability for your the use any part of this project.
+As the web app contains live feed from the camera it is advised to deploy it in a secure network environment or without internet access.
+If you prefer during the instalation don't install the web app.
+We don't take any responsability for your use of any parts of this project.
