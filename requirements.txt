@@ -1,0 +1,3 @@
+picamera
+gpiozero
+HAP-python[QRCode]

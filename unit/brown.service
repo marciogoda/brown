@@ -1,0 +1,13 @@
+[unit]
+Description=Brown Capability
+After=multi-user.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/brown/
+ExecStart=/usr/bin/python3 /home/pi/brown/capability.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
