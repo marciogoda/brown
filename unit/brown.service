@@ -1,6 +1,7 @@
-[unit]
+[Unit]
 Description=Brown Capability
-After=multi-user.target
+Wants=pigpiod.service
+After=local-fs.target network-online.target pigpiod.service
 
 [Service]
 Type=simple
@@ -8,6 +9,7 @@ User=pi
 WorkingDirectory=/home/pi/brown/
 ExecStart=/usr/bin/python3 /home/pi/brown/capability.py
 Restart=on-abort
+
 
 [Install]
 WantedBy=multi-user.target

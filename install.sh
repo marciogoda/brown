@@ -41,7 +41,7 @@ fi
 
 # Install brown
 mkdir /usr/local/bin/brown
-cp ./brown/capability.py /usr/local/bin/brown/capability.py
+cp ./capability.py /usr/local/bin/brown/capability.py
 
 # Install brown service
 cp ./unit/brown.service /lib/systemd/system/brown.service
